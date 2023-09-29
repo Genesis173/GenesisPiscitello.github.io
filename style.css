@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@200;300;400;500;600;700&family=Righteous&family=Work+Sans:wght@100;200;300;400;500;700&display=swap');
+
+.contenedor-header {
+    box-sizing: border-box;
+    font-family: "work sans";
+    margin: 0;
+    padding: 0;
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+
+}
+.contenedor-header header .logo a{
+    font-family: "righteous";
+    font-size: 36px;
+    color: #f4a7f7;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #f4a7f7;
+}
+.nav-responsive{
+    background-color: #1CB698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/* SECCION INICIO */
+.inicio {
+    background:  url(fondo\ 2.jpg);
+    background-size: cover;
+    height: 100vh;
+    color:#fff;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenido-banner {
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+
+}
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid #f4a7f7;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: "righteous";
+}
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+    font-family: "work sans";
+   
+}
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    margin: 30px 5px;
+    font-size: 20px;
+    transition: .3s;
+    
+
+}
+.inicio .contenido-banner .redes a:hover{
+    background-color: #f4a7f7;
+}
+/* Seccion Conocimientos */
+.conocimientos{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.conocimientos .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.conocimientos h2{
+    font-size: 48px;
+    font-family: "righteous";
+    text-align: center;
+    padding: 20px 0;
+}
+.conocimientos .fila{
+    display: flex;
+    font-family: "work sans";
+
+}
+.conocimientos .fila h3{
+    font-size: 28px;
+    font-family: "righteous";
+    margin-bottom: 25px;
+}
+.conocimientos .conocimientos >span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.conocimientos .conocimientos .barra-conocimiento{
+    height: 8px;
+    width: 80px;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+.conocimientos .conocimientos .progreso{
+    background-color: #f4a7f7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+   
+}
+.conocimientos .conocimientos .progreso1{
+    background-color: #f4a7f7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    
+}
+
+.conocimientos .conocimientos .barra-conocimiento span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #f4a7f7;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+
+}
+/* Seccion Curriculum */
+.curriculum{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.curriculum  .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.curriculum h2{
+    font-size: 48px;
+    font-family: "righteous";
+    text-align: center;
+    padding: 20px 0;
+}
+.curriculum .fila{
+    display: flex;
+    justify-content: space-between;
+    font-family: "work sans";
+
+}
+.curriculum .fila .col-izquierda{
+    width: 49%;
+    padding: 0 20px;
+}
+.curriculum .fila .col-derecha{
+    width: 49%;
+    padding: 0 20px;
+}
+.curriculum .fila .col-izquierda h3{
+    font-size: 28px;
+    font-family: "righteous";
+    margin-bottom: 25px;
+
+}
+.curriculum .fila .col-derecha h3{
+    font-size: 28px;
+    font-family: "righteous";
+    margin-bottom: 25px;
+
+}
+.curriculum .fila .col-izquierda{
+    border-right: 2px solid #252a2e;
+}
+.curriculum .fila .col-derecha{
+    border-left: 2px solid #252a2e;
+}
+.curriculum .fila .item-izq{
+    padding: 25px;
+    border-bottom: 30px;
+    background-color: #252a2e;
+    position: relative;
+}
+.curriculum .fila .item-der{
+    padding: 25px;
+    border-bottom: 30px;
+    background-color: #252a2e;
+    position: relative;
+}
+.curriculum .fila  .item-izq h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.curriculum .fila  .item-der h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.curriculum .fila  .item-izq .casa{
+    color: #f4a7f7;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.curriculum .fila  .item-der .casa{
+    color: #f4a7f7;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.curriculum .fila  .item-izq .fecha{
+    color: #f4a7f7;
+    display: block;
+    margin-bottom: 10px;
+}
+.curriculum .fila  .item-der .fecha{
+    color: #f4a7f7;
+     display: block;
+     margin-bottom: 10px;
+}
+.curriculum .fila .col-izquierda{
+    border-right: 2px solid #f4a7f7;
+    margin-right: 20px;
+}
+.curriculum .fila .col-derecha{
+    border-left: 2px solid #f4a7f7;
+    margin-left: 20px;
+}
+.curriculum .fila .col-izquierda .conectori{
+    height: 2px;
+    background-color: #f4a7f7;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.curriculum .fila .col-izquierda .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #f4a7f7;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.curriculum .fila .col-derecha .conectord{
+    height: 2px;
+    background-color: #f4a7f7;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.curriculum .fila .col-derecha .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #f4a7f7;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+/* SECCION PROYECTOS */
+.proyectos{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.proyectos  .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.proyectos h2{
+    font-size: 48px;
+    font-family: "righteous";
+    text-align: center;
+    padding: 20px 0;
+}
+.proyectos .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: "work sans";
+}
+.proyectos .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.proyectos .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+.proyectos .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(253, 188, 242, 0.8),#f3a3efcc);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.proyectos .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.proyectos .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+.proyectos .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+/* SECCION CONTACTO */
+.contacto{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: "righteous";
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    font-family: "work sans";
+}
+.contacto .contenido-seccion p span{
+    color: #f4a7f7;
+    font-weight: bold;
+    font-family: "work sans";
+}
+.contacto .fila{
+    display: flex;
+    font-family: "work sans";
+}
+
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #f4a7f7;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+footer{
+    background-color: #252a2e;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    margin: 30px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #f4a7f7;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25%;
+    border-radius: 50%;
+    line-height: 50%;
+    font-size: 18px;
+}
+/* SECCION RESPONSIVE */
+@media (max-width:980px){  
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252a2e;
+        width: 180px;
+
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media (max-width:700px){
+    .conocimientos .fila{
+        display: block;
+
+    }
+    .conocimientos .fila .col{
+        width: 100%;
+    }
+    .conocimientos .fila .col .barra-conocimiento{
+        width: 100%;
+    }
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col-derecha{
+        width: 90%;
+    }
+    .curriculum .fila .col-izquierda{
+        width: 90%;
+    }
+    .curriculum .fila .col-derecha{
+        margin-left: 20px;
+    }
+    .proyectos .galeria{
+        display: block;
+        width: 100%;
+    }
+    .proyectos .galeria .proyecto{
+        max-width: 100%;
+    }
+    .proyectos .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}
+
+
